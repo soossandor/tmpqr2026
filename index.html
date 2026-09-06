@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMPQR 2026 - Course Document | University of Sopron</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    :root {
+        --primary-navy: #0f172a;
+        --accent-cyan: #0e7490;
+        --accent-cyan-light: #06b6d4;
+        --bg-slate: #f8fafc;
+        --text-dark: #1e293b;
+        --text-muted: #64748b;
+        --card-border: #e2e8f0;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--bg-slate);
+        color: var(--text-dark);
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Fejléc - Alapértelmezett asztali nézet */
+    header {
+        background-color: var(--primary-navy);
+        color: #ffffff;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+        z-index: 100;
+    }
+
+    .brand-group {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .brand-badge {
+        background: linear-gradient(135deg, var(--accent-cyan), var(--accent-cyan-light));
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 6px;
+        white-space: nowrap;
+    }
+
+    .brand-title h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: #ffffff;
+        line-height: 1.2;
+    }
+
+    .brand-title p {
+        font-size: 11px;
+        color: #94a3b8;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 8px 14px;
+        border-radius: 6px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        min-height: 38px;
+        white-space: nowrap;
+    }
+
+    .btn-primary { background-color: var(--accent-cyan); color: #ffffff; }
+    .btn-secondary { background-color: rgba(255, 255, 255, 0.1); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.2); }
+
+    /* Tájékoztató sáv */
+    .notice-banner {
+        background-color: #eff6ff;
+        border-bottom: 1px solid #bfdbfe;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        color: #1e40af;
+        gap: 10px;
+    }
+
+    /* Beágyazott keret mobilra optimalizálva */
+    .frame-container {
+        flex: 1;
+        width: 100%;
+        background: #ffffff;
+        position: relative;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    /* MOBIL OPTIMALIZÁLÁS (768px alatti kijelzők / Okostelefonok) */
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: stroke;
+            padding: 12px 14px;
+        }
+
+        .brand-group {
+            width: 100%;
+        }
+
+        .brand-title h1 {
+            font-size: 14px;
+        }
+
+        .brand-title p {
+            display: none; /* Mobilon elrejtjük a másodlagos alcímet a helytakarékosság miatt */
+        }
+
+        .header-actions {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Mobilon egymás mellé kerül a két széles gomb */
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .btn {
+            width: 100%;
+            font-size: 11px;
+            padding: 8px 6px;
+        }
+
+        .notice-banner {
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 11px;
+            padding: 8px 12px;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+    <header>
+        <div class="brand-group">
+            <span class="brand-badge">TMPQR 2026</span>
+            <div class="brand-title">
+                <h1>Theory and Methodology of Quantitative Pedagogical Research</h1>
+                <p>University of Sopron • Benedek Elek Faculty of Pedagogy (BPK) | Instructor: Sándor Soós</p>
+            </div>
+        </div>
+        <div class="header-actions">
+            <!-- Replace GOOGLE_DOC_URL with your actual published or shared Google Document link -->
+            <a id="btn-open-direct" class="btn btn-secondary" href="https://docs.google.com/document/d/e/2PACX-1vRlC51D4OEIxKx6aJVt15qA1hMMtuzK5oZjMxJPE386L7EiCsXmSUNM_2r1upm5uLuuVqjqeQAkTR_z/pub?embedded=true" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in New Tab
+            </a>
+            <a class="btn btn-primary" href="mailto:soossandor@uni-sopron.hu">
+                <i class="fa-solid fa-envelope"></i> Contact Instructor
+            </a>
+        </div>
+    </header>
+
+    <div class="notice-banner">
+        <div>
+            <i class="fa-solid fa-circle-info" style="margin-right: 6px;"></i>
+            <strong>Temporary Course Workspace:</strong> We are initiating the semester in this collaborative document while the official Moodle course page is finalized.
+        </div>
+        <div>
+            <strong>Mondays 8:00 – 10:45</strong> | Országh László Lab (Ground 14)
+        </div>
+    </div>
+
+    <!-- The Google Document can be embedded here directly by replacing the src URL -->
+    <div class="frame-container">
+        <!-- 
+          To embed your Google Doc:
+          1. In Google Docs: File -> Share -> Publish to web -> Embed
+          2. Paste that published link into the src attribute below.
+          Alternatively, if you prefer an instant redirect instead of an iframe, use the script below.
+        -->
+        <iframe 
+            id="doc-frame"
+            src="about:blank" 
+            title="TMPQR 2026 Course Document"
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <script>
+        // CONFIGURATION: Insert your Google Document link here (Shareable or Published link)
+        const GOOGLE_DOC_URL = "https://docs.google.com/document/d/e/2PACX-1vRlC51D4OEIxKx6aJVt15qA1hMMtuzK5oZjMxJPE386L7EiCsXmSUNM_2r1upm5uLuuVqjqeQAkTR_z/pub?embedded=true"; // <-- PASTE YOUR TMPQR GOOGLE DOC LINK HERE
+
+        // Update direct link button and iframe target
+        document.getElementById("btn-open-direct").href = GOOGLE_DOC_URL;
+        
+        // If an iframe embedded version is preferred:
+        const frame = document.getElementById("doc-frame");
+        if (GOOGLE_DOC_URL && GOOGLE_DOC_URL !== "https://docs.google.com") {
+            frame.src = GOOGLE_DOC_URL;
+        } else {
+            frame.srcdoc = `
+                <div style="font-family:sans-serif; text-align:center; padding-top:80px; color:#475569;">
+                    <h3 style="font-size:22px; color:#0f172a; margin-bottom:12px;">Welcome to TMPQR 2026</h3>
+                    <p style="font-size:15px; margin-bottom:20px;">Please configure your Google Doc link in index.html to activate the direct preview.</p>
+                    <a href="${GOOGLE_DOC_URL}" target="_blank" style="background:#0e7490; color:#fff; padding:10px 20px; border-radius:6px; text-decoration:none; font-weight:600;">Open Document</a>
+                </div>
+            `;
+        }
+
+        // OPTIONAL: If you want automatic redirect directly to Google Docs without keeping the student on the HTML frame,
+        // uncomment the following line:
+        // window.location.href = GOOGLE_DOC_URL;
+    </script>
+</body>
+</html>
