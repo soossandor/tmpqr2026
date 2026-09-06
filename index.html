@@ -119,18 +119,20 @@
 
     /* Beágyazott keret mobilra optimalizálva */
     .frame-container {
-        flex: 1;
-        width: 100%;
-        background: #ffffff;
-        position: relative;
-    }
+    flex: 1;
+    width: 100%;
+    /* A fejléc és a sávok alatti teljes területet kitölti */
+    height: calc(100vh - 100px);
+    height: calc(100dvh - 100px);
+    display: flex;
+}
 
-    iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-    }
-
+iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 800px; /* Garantált minimális magasság */
+    border: none;
+}
     /* MOBIL OPTIMALIZÁLÁS (768px alatti kijelzők / Okostelefonok) */
     @media (max-width: 768px) {
         header {
